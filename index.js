@@ -4,6 +4,7 @@ const path = require("path");
 
 // ให้ Express ให้บริการไฟล์ static จากโฟลเดอร์ 'public'
 app.use(express.static(path.join(__dirname, "public")));
+app.use(express.static('public'));
 
 // เมื่อเข้าถึง root (/) ให้แสดงไฟล์ dashboard.html
 app.get('/', (req, res) => {
